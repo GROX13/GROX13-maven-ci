@@ -1,5 +1,8 @@
 package org.giorgi.example;
 
+import org.giorgi.example.ConcreteObserverOne;
+import org.giorgi.example.ConcreteSubjectOne;
+
 public class App {
 
 	public static void main(String[] args) {
