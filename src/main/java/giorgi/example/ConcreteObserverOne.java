@@ -19,6 +19,7 @@ public class ConcreteObserverOne implements Observer {
 		this.subject = subject;
 	}
 
+	@Override
 	public void update() {
 		this.observerState = subject.getSubjectState();
 		System.out.println("Observer " + name + "'s new name is "
