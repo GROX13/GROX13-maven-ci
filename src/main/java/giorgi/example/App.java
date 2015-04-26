@@ -8,9 +8,16 @@ public class App {
 		s.attach(new ConcreteObserverOne(s, "X"));
 		s.attach(new ConcreteObserverOne(s, "Y"));
 		s.attach(new ConcreteObserverOne(s, "Z"));
-
 		s.setSubjectState("ABC");
-		s.notifyObservers();
-	}
+		System.out.println();
 
+		ConcreteObserverOne temp = new ConcreteObserverOne(s, "A");
+		s.attach(temp);
+		s.setSubjectState("ACD");
+		System.out.println();
+
+		s.detach(temp);
+		s.setSubjectState("ABCD");
+		System.out.println();
+	}
 }
