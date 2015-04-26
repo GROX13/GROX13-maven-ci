@@ -4,7 +4,9 @@
 
 ამ რეპოზიტორის მიზანია პრაქტიკულად გამოვცადო თულების და ბიბლიოთეკების ჯაჭვი.
 
-* [Maven](http://mvnrepository.com/)
-* [Mockito](http://mockito.org/)
-* [Travis CI](http://docs.travis-ci.com/user/status-images/)
-* [.gitignore](https://www.gitignore.io/)
+* Source Code Control System ([GitHub .gitignore](https://www.gitignore.io/))
+* Build Automation ([Maven](http://mvnrepository.com/))
+* Dependency Management / Central Repository (Maven, vnrepository.com) 
+* Continuous Integration ([Travis CI](http://docs.travis-ci.com/user/status-images/))
+* Unit Testing Framework (JUnit)
+* Mocking Framework ([Mockito](http://mockito.org/))
