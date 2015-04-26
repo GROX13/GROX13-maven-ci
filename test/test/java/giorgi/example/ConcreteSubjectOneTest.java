@@ -11,12 +11,12 @@ public class ConcreteSubjectOneTest {
 	ConcreteSubjectOne underTest;
 
 	@Before
-	private void setUp() {
+	public void setUp() {
 		underTest = new ConcreteSubjectOne();
 	}
 
 	@After
-	private void tearDown() {
+	public void tearDown() {
 		underTest = null;
 	}
 
