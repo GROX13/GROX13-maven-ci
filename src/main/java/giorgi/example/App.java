@@ -1,7 +1,4 @@
-package org.giorgi.example;
-
-import org.giorgi.example.ConcreteObserverOne;
-import org.giorgi.example.ConcreteSubjectOne;
+package main.java.giorgi.example;
 
 public class App {
 
@@ -12,7 +9,6 @@ public class App {
 		s.attach(new ConcreteObserverOne(s, "Y"));
 		s.attach(new ConcreteObserverOne(s, "Z"));
 
-		// Change subject and notify observers
 		s.setSubjectState("ABC");
 		s.notifyObservers();
 	}

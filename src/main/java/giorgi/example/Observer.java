@@ -1,4 +1,4 @@
-package org.giorgi.example;
+package main.java.giorgi.example;
 
 public interface Observer {
 
