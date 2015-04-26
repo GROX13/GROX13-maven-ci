@@ -1,6 +1,6 @@
 package test.java.giorgi.example;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -10,6 +10,7 @@ import main.java.giorgi.example.Observer;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 public class ConcreteSubjectOneTest {
 
@@ -36,6 +37,7 @@ public class ConcreteSubjectOneTest {
 
 	@Test
 	public void testSetSubjectState() {
+		underTest = Mockito.spy(new ConcreteSubjectOne());
 		underTest.setSubjectState(subjectState);
 		verify(underTest).setSubjectState(subjectState);
 		verify(underTest).notifyObservers();
